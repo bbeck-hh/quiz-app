@@ -13,18 +13,23 @@
 :root {
     /* Color Variables */
 --global-bg: #00ACC1;  /* Global Background */
---main-bg: #f5f5f5;  /* Main Background */
 --header-footer-bg: #1E88E5;  /* Header footer*/
+--main-bg: #f5f5f5;  /* Main Background */
 --hover-active-color: #FFC107;  /* Hover color */
 --card-bg: #43A047;  /* Card Background */
+--tag-bg: #ffeda2;  /* Tag Background */
+--input-field-text: 1px solid #ddd;  /* Input text field */
 
-/* #43A047
-#FB8C00
-#D32F2F 
-#8E24AA
-#3949AB 
-#00ACC1
-#FDD835  */
+/* Color for Categories */
+--category-bg-allgemeinwissen: #f43636;
+--category-bg-tiere: #fb8c00;
+--category-bg-geographie: #ffeda2;
+--category-bg-geschichte: #d32f2f;
+--category-bg-musik: #8e24aa;
+--category-bg-filme: #3949ab;
+--category-bg-actor: #3c0ff0;
+--category-bg-essen: #43a047;
+
 }
   
 
