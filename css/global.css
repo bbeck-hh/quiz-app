@@ -11,7 +11,7 @@ body {
   background-color: var(--global-bg);
 }
 
-.parent {
+.app-start {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto auto auto;
