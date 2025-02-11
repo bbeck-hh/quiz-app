@@ -14,8 +14,7 @@ body {
 .parent {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
+    grid-template-rows: auto auto auto;
     grid-template-areas:
         "header"
         "main"
@@ -28,7 +27,6 @@ header {
 
 main {
     grid-area: main;
-    background-color: var(--main-bg);
 }
 
 footer {

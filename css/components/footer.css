@@ -5,7 +5,7 @@ footer {
     bottom: 0;
     border: 1px solid;
     width: 100vw;
-    padding: 1em 0;
+    padding: .5rem 0;
 }
 
 .footer-nav {
@@ -17,14 +17,9 @@ footer {
     width: 100%;
 }
 
-.footer-nav li {
-   
-}
-
 .footer-link {
     text-decoration: none;
     display: block;
-    padding: 0.5em;
     transition:  transform 0.2s;
 }
 

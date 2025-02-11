@@ -1,8 +1,22 @@
+main {
+    background-color: var(--main-bg);
+}
+
 .main-content {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    height: 100vh;
-    width: 100%;
+    height: auto;
+    min-height: calc(100vh - 100px);
+    width: 100vw;
     background-color: pink;
+}
+
+
+@media (min-width: 768px) {
+    .main-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
 }
