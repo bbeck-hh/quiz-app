@@ -1,5 +1,25 @@
-h1 {
-    color: red;
+@import "global.css";
+@import "components/header.css";
+@import "components/card.css";
+@import "components/footer.css";
+
+:root {
+    /* Color Variables */
+--global-bg: #00ACC1;  /* Global Background */
+--main-bg: #f5f5f5;  /* Main Background */
+--header-footer-bg: #1E88E5;  /* Header footer*/
+--hover-active-color: #FFC107;  /* Hover color */
+
+/* #43A047
+#FB8C00
+#D32F2F 
+#8E24AA
+#3949AB 
+#00ACC1
+#FDD835  */
 }
+  
+
+
 
 
