@@ -1,0 +1,17 @@
+.nav {
+    display: flex;
+}
+.nav__item {
+    flex-grow: 1;
+}
+.nav__link {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 1rem 2rem;
+    color: inherit
+}
+
+.nav__linl--active {
+    background-color: #ddd;
+}
