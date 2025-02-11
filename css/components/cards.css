@@ -22,7 +22,7 @@
     width: 100%;
     padding: .5rem;
     margin-bottom: 1rem;
-    border: 1px solid #ddd;
+    border: var(--input-field-text);
     border-radius: .25rem;
 }
 
@@ -32,11 +32,33 @@
 }
 
 .card-tag {
-    background-color: #f0f0f0;
     border-radius: 12px;
     padding: 4px 8px;
     font-size: 0.9em;
 }
+
+.card-tag--tiere {
+    background-color: var(--category-bg-tiere);
+}
+.card-tag--geographie {
+    background-color: var(--category-bg-geographie);
+}
+.card-tag--geschichte {
+    background-color: var(--category-bg-geschichte);
+}   
+.card-tag--musik {
+    background-color: var(--category-bg-musik);
+}
+.card-tag--filme {
+    background-color: var(--category-bg-filme);
+}
+.card-tag--actor {
+    background-color: var(--category-bg-actor);
+}
+.card-tag--essen {
+    background-color: var(--category-bg-essen);
+}
+
 
 /* sr -> screen reader only */
 .sr-only {
