@@ -1,6 +1,10 @@
 main {
     background-color: var(--main-bg);
 }
+.quiz-section {
+    width: 100vw;
+}
+
 
 .main-content {
     display: flex;
