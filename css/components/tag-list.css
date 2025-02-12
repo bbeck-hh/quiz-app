@@ -1,0 +1,84 @@
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+}
+
+.card-list__item {
+    background-color: pink;
+    color: #334;
+    padding: 2px 4px;
+    border-radius: 4px;
+  }
+
+.card__tag {
+    border-radius: 12px;
+    padding: 4px 8px;
+    font-size: 0.9em;
+}
+
+.card-list__item--tiere {
+    background-color: var(--category-bg-tiere);
+}
+.card-list__item--geographie {
+    background-color: var(--category-bg-geographie);
+}
+.card-list__item--geschichte {
+    background-color: var(--category-bg-geschichte);
+}   
+.card-list__item--musik {
+    background-color: var(--category-bg-musik);
+}
+.card-list__item--filme {
+    background-color: var(--category-bg-filme);
+}
+.card-list__item--actor {
+    background-color: var(--category-bg-actor);
+}
+.card-list__item--essen {
+    background-color: var(--category-bg-essen);
+}
+
+.card__button {
+    background-color: transparent;
+    display: block;
+    border: none;
+    color: inherit;
+    font-size: 1rem;
+    font-weight: 900;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 999px;
+    cursor: pointer;
+}
+.card__button:hover {
+    background-color: var(--hover-active-color);
+}
+.card__answer {
+    display: none;
+    text-align: center;
+    background-color: #ddd;
+    margin-inline: -1rem;
+    padding-block: 1rem;
+    color: #334;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.card__answer--visible {
+    display: block;
+}
+
+
+/* sr -> screen reader only */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}

@@ -1,4 +1,4 @@
-/* Styles for the cards */
+/* Styles for the cards 
 
 .card {
     background-color: var(--card-bg);
@@ -26,78 +26,4 @@
     border-radius: .25rem;
 }
 
-.card-category {
-    display: flex;
-    gap: 8px;
-}
-
-.card__tag {
-    border-radius: 12px;
-    padding: 4px 8px;
-    font-size: 0.9em;
-}
-
-.card__tag--tiere {
-    background-color: var(--category-bg-tiere);
-}
-.card__tag--geographie {
-    background-color: var(--category-bg-geographie);
-}
-.card__tag--geschichte {
-    background-color: var(--category-bg-geschichte);
-}   
-.card__tag--musik {
-    background-color: var(--category-bg-musik);
-}
-.card__tag--filme {
-    background-color: var(--category-bg-filme);
-}
-.card__tag--actor {
-    background-color: var(--category-bg-actor);
-}
-.card__tag--essen {
-    background-color: var(--category-bg-essen);
-}
-
-.card__button {
-    background-color: transparent;
-    display: block;
-    border: none;
-    color: inherit;
-    font-size: 1rem;
-    font-weight: 900;
-    margin-inline: auto;
-    margin-bottom: 1rem;
-    padding: 1rem 2rem;
-    border-radius: 999px;
-    cursor: pointer;
-}
-.card__button:hover {
-    background-color: var(--hover-active-color);
-}
-.card__answer {
-    display: none;
-    text-align: center;
-    background-color: #ddd;
-    margin-inline: -1rem;
-    padding-block: 1rem;
-    color: #334;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-.card__answer--visible {
-    display: block;
-}
-
-
-/* sr -> screen reader only */
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-}
+*/

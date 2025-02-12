@@ -6,14 +6,106 @@
 		<title>Quiz App</title>
 		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
-	<body>
-		<div class="app-start">
-			<header>
-				<h1 class="header-title">Start Quiz 2025</h1>
-			</header>
+	<!-- https://github.com/wd-bootcamp/ber-web-25-1-recap-project-1/blob/main/styles/styles.css -->
+	<body class="layout">
+		<header class="layout__heading">
+			<h1>Start Quiz 2025</h1>
+		</header>
 
-			<main class="main-content">
-				<section class="quiz-section">
+		<main>
+			<ul class="layout__card-list">
+				<li>
+					<article class="card">
+						<h2 class="card__question">
+							Was ist die Hauptstadt von Frankreich?
+						</h2>
+						<!-- <label for="answer-frankreich" class="sr-only"
+								>Antwort auf die Frage: Was ist die Hauptstadt von
+								Frankreich?</label
+							>
+							<input
+								type="text"
+								id="answer-frankreich"
+								class="card-answer-field"
+								placeholder="Ihre Antwort"
+								aria-label="Antwort auf die Frage: Was ist die Hauptstadt von Frankreich?"
+							/> -->
+						<button class="card__button">Antwort zeigen</button>
+						<span class="card__answer">Paris</span>
+
+						<ul class="card-list">
+							<li class="card-list__item card-list__item--geographie">
+								Geographie
+							</li>
+							<li class="card-list__item card-list__item--geographie">
+								Europa
+							</li>
+						</ul>
+
+						<button class="bookmark" title="Bookmark this card">
+							<!-- bookmark__icon---active -->
+							<svg
+								class="bookmark__icon"
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
+							</svg>
+						</button>
+					</article>
+				</li>
+				<li>
+					<article class="card">
+						<h2 class="card__question">
+							Welche Säugetierart ist das einzige, das fliegen kann?
+						</h2>
+						<!-- --><label for="answer-saeugetier" class="sr-only">
+							Antwort auf die Frage: Welche Säugetierart ist das einzige, das
+							fliegen kann?
+						</label>
+						<input
+							type="text"
+							id="answer-saeugetier"
+							class="card-answer-field"
+							placeholder="Ihre Antwort"
+							aria-label="Antwort auf die Frage: Welche Säugetierart ist das einzige, das fliegen kann?"
+						/>
+						<button class="card__button">Antwort zeigen</button>
+						<span class="card__answer">Fledermaus</span>
+
+						<ul class="card-list">
+							<li class="card-list__item card-list__item--tiere">Tiere</li>
+						</ul>
+
+						<button class="bookmark" title="Bookmark this card">
+							<!-- bookmark__icon---active -->
+							<svg
+								class="bookmark__icon"
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
+							</svg>
+						</button>
+					</article>
+				</li>
+			</ul>
+
+			<!-- <section class="quiz-section">
 					<div class="card">
 						<h2 class="card-title">Was ist die Hauptstadt von Frankreich?</h2>
 						<label for="answer-france" class="sr-only"
@@ -62,7 +154,7 @@
 						<h2 class="card-title">
 							Welche Säugetierart ist das einzige, das fliegen kann?
 						</h2>
-						<label for="answer-france" class="sr-only"
+						<label for="answer-saeugetier" class="sr-only"
 							>Welche Säugetierart ist das einzige, das fliegen kann?</label
 						>
 						<input
@@ -76,36 +168,75 @@
 							<span class="card__tag card__tag--tiere">Tierwelt</span>
 						</div>
 					</div>
-				</section>
-			</main>
+				</section> -->
+		</main>
 
-			<footer>
-				<nav aria-label="Footer navigation">
-					<ul class="footer-nav">
-						<li>
-							<a class="footer-link" href="./index.html"
-								><img src="assets/house.svg" alt="Home" aria-label="Home"
-							/></a>
-						</li>
-						<li>
-							<a class="footer-link" href="./bookmarks.html"
-								><img
-									src="assets/bookmark.svg"
-									alt="Bookmarks"
-									aria-label="Bookmarks"
-							/></a>
-						</li>
-						<li>
-							<a class="footer-link" href="./profile.html"
-								><img
-									src="assets/circle-user-round.svg"
-									alt="Profile"
-									aria-label="Profile"
-							/></a>
-						</li>
-					</ul>
-				</nav>
-			</footer>
-		</div>
+		<nav class="layout__navigation">
+			<ul class="nav">
+				<li class="nav__item">
+					<a class="nav__link nav__link--active" href="/" title="Home">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							class="lucide lucide-house"
+						>
+							<path id="home" d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+							<path
+								d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+							/>
+						</svg>
+					</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" href="/bookmarks.html" title="Bookmarks">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							class="lucide lucide-bookmark"
+						>
+							<path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
+						</svg>
+					</a>
+				</li>
+				<li class="nav__item">
+					<a
+						class="nav__link"
+						class="nav__link"
+						href="/profile.html"
+						title="Profile"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							class="lucide lucide-user"
+						>
+							<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+							<circle cx="12" cy="7" r="4" />
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</nav>
 	</body>
 </html>

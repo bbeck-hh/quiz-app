@@ -1,5 +1,6 @@
 .nav {
     display: flex;
+    background-color: var(--header-footer-bg);
 }
 .nav__item {
     flex-grow: 1;
@@ -13,5 +14,5 @@
 }
 
 .nav__linl--active {
-    background-color: #ddd;
+    background-color: var(--hover-active-color);
 }
