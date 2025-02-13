@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Quiz App</title>
 		<link rel="stylesheet" href="./css/styles.css" />
+		<script src="./js/index.js" defer></script>
 	</head>
 	<!-- https://github.com/wd-bootcamp/ber-web-25-1-recap-project-1/blob/main/styles/styles.css -->
 	<body class="layout">
@@ -30,8 +31,10 @@
 								placeholder="Ihre Antwort"
 								aria-label="Antwort auf die Frage: Was ist die Hauptstadt von Frankreich?"
 							/> -->
-						<button class="card__button">Antwort zeigen</button>
-						<span class="card__answer">Paris</span>
+						<button class="card__button btn" data-js="btn-show-answer">
+							Antwort anzeigen
+						</button>
+						<div class="card__answer" data-js="answer-shown">Paris</div>
 
 						<ul class="card-list">
 							<li class="card-list__item card-list__item--geographie">
@@ -66,19 +69,21 @@
 						<h2 class="card__question">
 							Welche Säugetierart ist das einzige, das fliegen kann?
 						</h2>
-						<!-- --><label for="answer-saeugetier" class="sr-only">
+						<label for="answer-saeugetier" class="sr-only">
 							Antwort auf die Frage: Welche Säugetierart ist das einzige, das
 							fliegen kann?
 						</label>
-						<input
+						<!-- <input
 							type="text"
 							id="answer-saeugetier"
 							class="card-answer-field"
 							placeholder="Ihre Antwort"
 							aria-label="Antwort auf die Frage: Welche Säugetierart ist das einzige, das fliegen kann?"
-						/>
-						<button class="card__button">Antwort zeigen</button>
-						<span class="card__answer">Fledermaus</span>
+						/> -->
+						<button class="card__button btn" data-js="btn-show-answer">
+							Antwort anzeigen
+						</button>
+						<div class="card__answer" data-js="answer-shown">Fledermaus</div>
 
 						<ul class="card-list">
 							<li class="card-list__item card-list__item--tiere">Tiere</li>

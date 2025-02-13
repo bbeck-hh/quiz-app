@@ -1,15 +1,16 @@
 @import "global.css";
 @import "components/layout.css";
-@import "components/card.css";
+@import "components/button.css";
+/* @import "components/card.css"; */
 @import "components/cards.css";
 @import "components/navigation.css";
 @import "components/bookmark.css";
 @import "components/tag-list.css";
 
 
-
+/* 
 @import "./components/profile.css";
 @import "./components/counter.css";
-@import "./components/dark-mode.css";
+@import "./components/dark-mode.css"; */
 
 

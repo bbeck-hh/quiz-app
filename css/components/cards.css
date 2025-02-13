@@ -10,7 +10,7 @@
   .card__question {
     margin-bottom: 1.5rem;
   }
-  
+/*   
   .card__button {
     background-color: transparent;
     display: block;
@@ -27,20 +27,24 @@
   
   .card__button:hover {
     background-color: var(--gray-900);
-  }
+  } */
   
   .card__answer {
     display: none;
     text-align: center;
-    background-color: var(--gray-100);
-    margin-inline: -1rem;
+    background-color: var(--white-200);
     padding-block: 1rem;
     color: var(--gray-900);
     font-size: 1.5rem;
+    margin: auto;
     margin-bottom: 1rem;
+    border: 1px solid;
+    border-radius: .75rem;
+    width: calc(100vw - 20rem);
+    min-width: calc(100vw - 5rem);;
   }
   
-  .card__answer--visible {
+  .visible {
     display: block;
   }
   .card__answerfield {

@@ -1,9 +1,27 @@
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
+
+.btn {
+    display: block;
+    align-items: center;
+    border: 0;
+    border-radius: .3rem;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    padding: .5rem .8rem;
+    text-align: center;
     cursor: pointer;
+    font-size: large;
+    font-weight: 700;
+    color: var(--white-100);
+    box-shadow: var(--btn-shadow);
+    background-color: var(--btn-default);
+    background-image: var(--btn-default-gardient);
+    border-color: var(--btn-default);
+}
+.btn:hover {
+    background-color: var(--btn-default-hover);
+    background-image: var(--btn-default-gardient-hover);
+    border-color: var(--btn-default-hover);
+}
+.grow {
     width: 100%;
 }

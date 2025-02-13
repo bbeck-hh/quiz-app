@@ -6,9 +6,8 @@
 }
 
 .card-list__item {
-    background-color: pink;
-    color: #334;
-    padding: 2px 4px;
+    color: inherit;
+    padding:.1rem .3rem;
     border-radius: 4px;
   }
 
@@ -40,23 +39,7 @@
     background-color: var(--category-bg-essen);
 }
 
-.card__button {
-    background-color: transparent;
-    display: block;
-    border: none;
-    color: inherit;
-    font-size: 1rem;
-    font-weight: 900;
-    margin-inline: auto;
-    margin-bottom: 1rem;
-    padding: 1rem 2rem;
-    border-radius: 999px;
-    cursor: pointer;
-}
-.card__button:hover {
-    background-color: var(--hover-active-color);
-}
-.card__answer {
+/* .card__answer {
     display: none;
     text-align: center;
     background-color: #ddd;
@@ -68,7 +51,7 @@
 }
 .card__answer--visible {
     display: block;
-}
+} */
 
 
 /* sr -> screen reader only */
