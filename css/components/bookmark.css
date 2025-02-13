@@ -6,6 +6,10 @@
     color:inherit;
     border: none;
 }
+.bookmark:hover {
+    cursor: pointer;
+
+}
 
 .bookmark__icon {
     width: 48px;
@@ -14,5 +18,5 @@
 
 .bookmark__icon---active {
     color: var(--bookmark-color);
-    fill: var(--bookmark-active);
+    fill: var(--bookmark-color);
 }
