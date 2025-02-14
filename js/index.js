@@ -21,6 +21,8 @@ btnBookmark.addEventListener('click', () => {
 
 document.addEventListener('click', event => {
     console.log(`btnAnswer clicked\ndata-js-questionId: ${questionId}\ndata-js-answerId: ${answerId}`);
+    const test = event.target.getAttribute('data-js-questionId');
+    console.log(`test: ${test}`);
 
     if (questionId === answerId) {
         answerShown.classList.toggle('visible');
