@@ -14,6 +14,7 @@ const bookmarkFlag = document.querySelector('[data-js="svgElement"]')
 //     answerShown.classList.toggle('visible');
 // });
 
+
 btnBookmark.addEventListener('click', () => {
     console.log(`btnBookmark clicked`);
     bookmarkFlag.classList.toggle('bookmark__icon---active');
