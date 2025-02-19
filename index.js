@@ -24,11 +24,10 @@ btnShowAnswer.addEventListener("click", () => {
     if (btnText === "Show answer") {
         btnShowAnswer.textContent = "Hide answer";
         questionCard.classList.toggle("hidden");
-        answerCard.style.display = "block";
+        answerCard.classList.toggle("card__answer--active");
     } else {
         btnShowAnswer.textContent = "Show answer";
         questionCard.classList.toggle("hidden");
-        answerCard.style.display = "none";
+        answerCard.classList.toggle("card__answer--active");
     }
-
 });
