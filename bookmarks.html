@@ -1,138 +1,112 @@
 <!DOCTYPE html>
-<html lang="de">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Quiz App - Bookmark</title>
-		<link rel="stylesheet" href="./css/styles.css" />
-		<script src="./js/index.js" defer></script>
-	</head>
-	<!-- https://github.com/wd-bootcamp/ber-web-25-1-recap-project-1/blob/main/styles/styles.css -->
-	<body class="layout">
-		<header class="layout__heading">
-			<h1>Start Quiz 2025</h1>
-		</header>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz-App</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Bookmarks</h1>
+    </header>
+    <main>
+      <ul class="card-list">
+        <li class="card-list__item">
+          <article class="card">
+            <h2 class="card__question">
+              Daniel Radcliffe became a global star in the film industry due to
+              his performance in which film franchise?
+            </h2>
+            <button class="card__button-answer" type="button">
+              Show answer
+            </button>
+            <p class="card__answer">Harry Potter</p>
+            <ul class="card__tag-list">
+              <li class="card__tag-list-item">#danielradcliffe</li>
+              <li class="card__tag-list-item">#hewhomustnotbenamed</li>
+              <li class="card__tag-list-item">#abracadabra</li>
+            </ul>
+            <div class="card__button-bookmark">
+              <button
+                class="bookmark bookmark--active"
+                aria-label="bookmark"
+                type="button"
+              >
+                <svg
+                  class="bookmark__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </main>
 
-		<main>
-			<ul class="layout__card-list">
-				<li>
-					<article class="card">
-						<h2 class="card__question">
-							Welche Säugetierart ist das einzige, das fliegen kann?
-						</h2>
-						<label for="answer-saeugetier" class="sr-only">
-							Antwort auf die Frage: Welche Säugetierart ist das einzige, das
-							fliegen kann?
-						</label>
-						<!-- <input
-							type="text"
-							id="answer-saeugetier"
-							class="card-answer-field"
-							placeholder="Ihre Antwort"
-							aria-label="Antwort auf die Frage: Welche Säugetierart ist das einzige, das fliegen kann?"
-						/> -->
-						<button class="card__button btn" data-js="btn-show-answer">
-							Antwort anzeigen
-						</button>
-						<div class="card__answer" data-js="answer-shown">Fledermaus</div>
-
-						<ul class="card-list">
-							<li class="card-list__item card-list__item--tiere">Tiere</li>
-						</ul>
-
-						<button
-							class="bookmark"
-							title="Bookmark this card"
-							data-js="btn-bookmark"
-						>
-							<!-- bookmark__icon---active -->
-							<svg
-								data-js="svgElement"
-								class="bookmark__icon bookmark__icon---active"
-								xmlns="http://www.w3.org/2000/svg"
-								width="24"
-								height="24"
-								viewBox="0 0 24 24"
-								fill="none"
-								stroke="currentColor"
-								stroke-width="2"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-							>
-								<path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
-							</svg>
-						</button>
-					</article>
-				</li>
-			</ul>
-		</main>
-
-		<nav class="layout__navigation">
-			<ul class="nav">
-				<li class="nav__item">
-					<a class="nav__link nav__link--active" href="/" title="Home">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="24"
-							height="24"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="lucide lucide-house"
-						>
-							<path id="home" d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
-							<path
-								d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
-							/>
-						</svg>
-					</a>
-				</li>
-				<li class="nav__item">
-					<a class="nav__link" href="/bookmarks.html" title="Bookmarks">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="24"
-							height="24"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="lucide lucide-bookmark"
-						>
-							<path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
-						</svg>
-					</a>
-				</li>
-				<li class="nav__item">
-					<a
-						class="nav__link"
-						class="nav__link"
-						href="/profile.html"
-						title="Profile"
-					>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="24"
-							height="24"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="lucide lucide-user"
-						>
-							<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
-							<circle cx="12" cy="7" r="4" />
-						</svg>
-					</a>
-				</li>
-			</ul>
-		</nav>
-	</body>
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__list-item">
+          <a
+            class="navigation__link"
+            href="index.html"
+            aria-label="go to home page"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewbox="0 0 24 24"
+              width="24px"
+            >
+              <path
+                d="M12 5.69l5 4.5V18h-2v-6H9v6H7v-7.81l5-4.5M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="navigation__list-item navigation__list-item--active">
+          <a
+            class="navigation__link"
+            href="bookmarks.html"
+            aria-label="go to bookmarks page"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewbox="0 0 24 24"
+              width="24px"
+            >
+              <path
+                d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="navigation__list-item">
+          <a
+            class="navigation__link"
+            href="profile.html"
+            aria-label="go to profile page"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewbox="0 0 24 24"
+              width="24px"
+            >
+              <path
+                d="M12 6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2m0 9c2.7 0 5.8 1.29 6 2v1H6v-.99c.2-.72 3.3-2.01 6-2.01m0-11C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </body>
 </html>
