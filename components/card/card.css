@@ -1,5 +1,7 @@
 .card {
-  border: 1px solid var(--black);
+  background-color: var(--bgCard);
+  border: 1px solid var(--borderCard);
+  border-radius: var(--fs-200);
   padding: 2rem;
   text-align: center;
   position: relative;
