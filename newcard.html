@@ -7,6 +7,7 @@
 		<title>Quiz-App</title>
 		<link rel="stylesheet" href="./styles.css" />
 		<script src="index.js" defer></script>
+		<script src="components/card-create/form.js" defer></script>
 	</head>
 	<body>
 		<header class="header">
@@ -20,13 +21,21 @@
 						<textarea
 							rows="5"
 							maxlength="170"
-							id=""
 							name="yourQuestion"
 							id="yourQuestion"
 							placeholder="Give me a pretty nice question, but not too easy."
 						></textarea>
 						<p class="card-create__counter-text-area">
-							<span data-js="chars-left">12</span> / 170 characters left.
+							<span
+								class="chars-left-question"
+								data-js="chars-left-question"
+							></span>
+							characters left from
+							<span
+								class="char-total-question"
+								data-js="char-total-question"
+							></span
+							>.
 						</p>
 					</label>
 					<label for="yourAnswer" class="card-create__label">
@@ -34,13 +43,21 @@
 						<textarea
 							rows="5"
 							maxlength="150"
-							id=""
 							name="yourAnswer"
 							id="yourAnswer"
 							placeholder="Let's go... Share your knowledge"
 						></textarea>
 						<p class="card-create__counter-text-area">
-							<span data-js="chars-left">12</span> / 150 characters left.
+							<span
+								class="chars-left-answer"
+								data-js="chars-left-answer"
+							></span>
+							characters left from
+							<span
+								class="char-total-answer"
+								data-js="chars-total-answer"
+							></span
+							>.
 						</p>
 					</label>
 					<label for="tag" class="card-create__label">
