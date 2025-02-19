@@ -67,3 +67,7 @@ img {
   height: auto;
   display: block;
 }
+
+.hidden {
+  visibility: hidden;
+}
