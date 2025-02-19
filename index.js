@@ -18,16 +18,16 @@ btnBookmark.addEventListener('click', () => {
 
 
 btnShowAnswer.addEventListener("click", () => {
-    // Needed cause there are spaces inside
+    // Needed cause there are spaces inside or .innerText
     const btnText = btnShowAnswer.textContent.trim();
 
     if (btnText === "Show answer") {
         btnShowAnswer.textContent = "Hide answer";
-        questionCard.classList.toggle("hidden");
+        //questionCard.classList.toggle("hidden");
         answerCard.classList.toggle("card__answer--active");
     } else {
         btnShowAnswer.textContent = "Show answer";
-        questionCard.classList.toggle("hidden");
+        //questionCard.classList.toggle("hidden");
         answerCard.classList.toggle("card__answer--active");
     }
 });
