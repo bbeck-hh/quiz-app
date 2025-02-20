@@ -23,6 +23,7 @@
 						name="yourQuestion"
 						id="yourQuestion"
 						placeholder="Give me a pretty nice question, but not too easy."
+						required
 					></textarea>
 					<p class="card-create__counter-text-area">
 						<span
@@ -45,6 +46,7 @@
 						name="yourAnswer"
 						id="yourAnswer"
 						placeholder="Let's go... Share your knowledge"
+						required
 					></textarea>
 					<p class="card-create__counter-text-area">
 						<span class="chars-left-answer" data-js="chars-left-answer"></span>
@@ -55,7 +57,7 @@
 				</label>
 				<label for="tag" class="card-create__label">
 					Tag:
-					<input type="text" name="tag" maxlength="100" />
+					<input type="text" name="tag" maxlength="100" required />
 				</label>
 				<button type="submit" class="card-create__button-submit">Submit</button>
 			</form>
