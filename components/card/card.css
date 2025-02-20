@@ -13,19 +13,23 @@
 
 .card__button-answer,
 .card-create__button-submit {
-  background: var(--secondary);
+  background: var(--darkgreen);
   color: var(--white);
   border: none;
   border-radius: var(--fs-200);
-  display: block;
-  margin: 0 auto 2rem auto;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
   padding: 1rem;
+  margin-bottom: 1rem;
+  margin-inline: auto;
+  letter-spacing: 0.1rem;
+  min-width: 10rem;
 }
 
 .card__button-answer:hover,
 .card-create__button-submit:hover {
   opacity: 0.75;
   cursor: pointer;
+  transform: translate(0, -2px);
 }
 
 .card__answer {
@@ -52,8 +56,10 @@
 }
 
 .card__tag-list-item {
-  background-color: var(--secondary);
+  background-color: var(--cardTag);
   color: var(--white);
   border-radius: 4px;
   padding: 0 5px;
+  border-radius: var(--fs-200);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
 }
