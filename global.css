@@ -19,6 +19,7 @@
 /* Own */
 --creamewhite:#F5F5DC;
 --beige:#F5F5F0;
+--forestgreen: #006400;
 --darkgreen:#228B22;
 --medium-sea-green: #3CB371;
 --sea-green: #2E8B57;
@@ -32,7 +33,7 @@
 --darkgray:#2F4F4F;
 
 --bgBody: var(--creamewhite);
---bgHeader: var(--olive);
+--bgHeader: var(--forestgreen);
 --bgCard: var(--beige);
 --borderCard: var(--darkbrown);
 --buttonColor: var(--darkgreen);
