@@ -1,30 +1,29 @@
 console.clear();
+import { fromDataJS } from './../../global.js';
 
 // Variables
+// Question Block
 const textareaQuestion = document.getElementById("yourQuestion");
-const maxLengthQuestion = document.getElementById("yourQuestion").maxLength;
-const totalCharQuestion = document.querySelector("[data-js=char-total-question]");
-const charsLeftQuestion = document.querySelector("[data-js=chars-left-question]");
+const maxLengthQuestion = textareaQuestion.maxLength;
+const totalCharQuestion = fromDataJS("char-total-question");
+const charsLeftQuestion = fromDataJS("chars-left-question");
 
+// Answer Block
 const textareaAnswer = document.getElementById("yourAnswer");
-const maxLengthAnswer = document.getElementById("yourAnswer").maxLength;
-const totalCharAnswer = document.querySelector("[data-js=chars-total-answer]");
-const charsLeftAnswer = document.querySelector("[data-js=chars-left-answer]");
+const maxLengthAnswer = textareaAnswer.maxLength;
+const totalCharAnswer = fromDataJS("chars-total-answer");
+const charsLeftAnswer = fromDataJS("chars-left-answer");
 
-// Max chars from the textaera -> Question and answer
+// Max chars from the textaeras -> Question and answer
 totalCharQuestion.textContent = maxLengthQuestion;
 totalCharAnswer.textContent = maxLengthAnswer;
 
-// 
+// Add the max chars to the span
 charsLeftQuestion.textContent = maxLengthQuestion;
 charsLeftAnswer.textContent = maxLengthAnswer;
 
-
-console.log(maxLengthAnswer + " hier");
-
-
-
-// Event Listener -1 from the max char by every hit a key
+// Listner for Question to calculates the remaining number of characters allowed in the question textarea.
+// @constant {number} remainingChars
 textareaQuestion.addEventListener("input", () => {
     const remainingChars = maxLengthQuestion - textareaQuestion.value.length;
     charsLeftQuestion.textContent = remainingChars;
@@ -35,6 +34,8 @@ textareaQuestion.addEventListener("input", () => {
     }
 });
 
+// Listner for Answer to calculates the remaining number of characters allowed in the question textarea.
+// @constant {number} remainingChars
 textareaAnswer.addEventListener("input", () => {
     const remainingChars = maxLengthQuestion - textareaAnswer.value.length;
     charsLeftAnswer.textContent = remainingChars;
