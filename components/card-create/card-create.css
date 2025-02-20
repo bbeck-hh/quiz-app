@@ -22,3 +22,7 @@
     font-size: var(--fs-200);
     
 }
+
+.card-list {
+    padding-top: 0;
+}
