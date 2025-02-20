@@ -7,68 +7,58 @@
 		<title>Quiz-App</title>
 		<link rel="stylesheet" href="./styles.css" />
 		<script src="index.js" defer></script>
-		<script src="components/card-create/form.js" defer></script>
+		<script type="module" src="components/card-create/form.js" defer></script>
 	</head>
 	<body>
 		<header class="header">
 			<h1 class="header__title">Create new cards</h1>
 		</header>
 		<main>
-			<article class="card-create">
-				<form data-js="card-form">
-					<label for="yourQuestion" class="card-create__label">
-						Your Question:
-						<textarea
-							rows="5"
-							maxlength="170"
-							name="yourQuestion"
-							id="yourQuestion"
-							placeholder="Give me a pretty nice question, but not too easy."
-						></textarea>
-						<p class="card-create__counter-text-area">
-							<span
-								class="chars-left-question"
-								data-js="chars-left-question"
-							></span>
-							characters left from
-							<span
-								class="char-total-question"
-								data-js="char-total-question"
-							></span
-							>.
-						</p>
-					</label>
-					<label for="yourAnswer" class="card-create__label">
-						Your Answer:
-						<textarea
-							rows="5"
-							maxlength="150"
-							name="yourAnswer"
-							id="yourAnswer"
-							placeholder="Let's go... Share your knowledge"
-						></textarea>
-						<p class="card-create__counter-text-area">
-							<span
-								class="chars-left-answer"
-								data-js="chars-left-answer"
-							></span>
-							characters left from
-							<span
-								class="char-total-answer"
-								data-js="chars-total-answer"
-							></span
-							>.
-						</p>
-					</label>
-					<label for="tag" class="card-create__label">
-						Tag:
-						<input type="text" name="tag" maxlength="100" />
-					</label>
-					<button type="submit" class="card-create__button-submit">
-						Submit
-					</button>
-				</form>
-			</article>
+			<form class="card-create" data-js="card-form">
+				<label for="yourQuestion" class="card-create__label">
+					Your Question:
+					<textarea
+						rows="5"
+						maxlength="171"
+						name="yourQuestion"
+						id="yourQuestion"
+						placeholder="Give me a pretty nice question, but not too easy."
+					></textarea>
+					<p class="card-create__counter-text-area">
+						<span
+							class="chars-left-question"
+							data-js="chars-left-question"
+						></span>
+						characters left from
+						<span
+							class="char-total-question"
+							data-js="char-total-question"
+						></span
+						>.
+					</p>
+				</label>
+				<label for="yourAnswer" class="card-create__label">
+					Your Answer:
+					<textarea
+						rows="5"
+						maxlength="150"
+						name="yourAnswer"
+						id="yourAnswer"
+						placeholder="Let's go... Share your knowledge"
+					></textarea>
+					<p class="card-create__counter-text-area">
+						<span class="chars-left-answer" data-js="chars-left-answer"></span>
+						characters left from
+						<span class="char-total-answer" data-js="chars-total-answer"></span
+						>.
+					</p>
+				</label>
+				<label for="tag" class="card-create__label">
+					Tag:
+					<input type="text" name="tag" maxlength="100" />
+				</label>
+				<button type="submit" class="card-create__button-submit">Submit</button>
+			</form>
 		</main>
 
 		<nav class="navigation">
