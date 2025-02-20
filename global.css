@@ -21,6 +21,7 @@
 --beige:#F5F5F0;
 --forestgreen: #006400;
 --darkgreen:#228B22;
+--smaragdgreen:#4CAF50;
 --medium-sea-green: #3CB371;
 --sea-green: #2E8B57;
 --olive:#556B2F;
@@ -37,7 +38,7 @@
 --bgCard: var(--beige);
 --borderCard: var(--darkbrown);
 --buttonColor: var(--darkgreen);
---cardTag: var(--sea-green);
+--cardTag: var(--smaragdgreen);
 }
 
 *,
