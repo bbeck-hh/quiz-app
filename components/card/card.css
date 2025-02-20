@@ -13,6 +13,7 @@
 
 .card__button-answer,
 .card-create__button-submit {
+  display: block;
   background: var(--darkgreen);
   color: var(--white);
   border: none;
