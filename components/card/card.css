@@ -1,3 +1,4 @@
+
 .card {
   background-color: var(--bgCard);
   border: 1px solid var(--borderCard);
@@ -28,6 +29,7 @@
 
 .card__button-answer:hover,
 .card-create__button-submit:hover {
+  border: 0;
   opacity: 0.75;
   cursor: pointer;
   transform: translate(0, -2px);
